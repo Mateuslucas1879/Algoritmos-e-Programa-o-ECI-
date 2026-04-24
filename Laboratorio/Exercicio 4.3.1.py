@@ -1,7 +1,16 @@
-def matriz_quadrado(matriz):
-    if not matriz:
-        return True
+numero = int(input("Digite o tamanho da matriz: "))
 
+matriz = []
+
+for i in range(numero):
+    linha = []
+    for j in range(numero):
+        valores = int(input(f"Numero de colunas da linha {i} x {j}: "))
+        linha.append(valores)
+    matriz.append(linha)
+
+
+def matriz_quadrado(matriz):
     num_linhas = len(matriz)
     soma_refe = sum(matriz[0])
 
@@ -31,6 +40,5 @@ def matriz_quadrado(matriz):
 
     return True
 
-entrada = input()
-matriz_recebida = eval(entrada)
-print(matriz_quadrado(matriz_recebida))
+
+print(matriz)
