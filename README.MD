@@ -3,53 +3,53 @@
 Bem-vindo ao repositório central de estudos sobre Lógica de Programação, Estruturas de Dados e Linguagens. Este projeto serve como um guia teórico e prático para entender como as instruções são processadas e como as linguagens modernas traduzem o pensamento humano em soluções computacionais.
 📌 Sumário
 
-    O que é um Algoritmo?
+O que é um Algoritmo?
 
-    Estruturas de Dados
+Estruturas de Dados
 
-    Linguagens de Programação
+Linguagens de Programação
 
-    Complexidade de Algoritmos (Big O)
+Complexidade de Algoritmos (Big O)
 
-    Como Contribuir
+Como Contribuir
 
 🤖 O que é um Algoritmo?
 
 Um algoritmo é uma sequência finita de passos bem definidos e não ambíguos que levam à solução de um problema. Em termos simples, é a receita do bolo do computador.
 Exemplo de Fluxo:
 
-    Entrada (Input): Dados iniciais (ex: dois números).
+Entrada (Input): Dados iniciais (ex: dois números).
 
-    Processamento: Operações lógicas/matemáticas (ex: soma).
+Processamento: Operações lógicas/matemáticas (ex: soma).
 
-    Saída (Output): Resultado final (ex: o total).
+Saída (Output): Resultado final (ex: o total).
 
 📦 Estruturas de Dados
 
 A forma como organizamos os dados influencia diretamente a performance do algoritmo. As principais estruturas exploradas neste repositório são:
 
-    Arrays/Listas: Armazenamento sequencial de elementos.
+Arrays/Listas: Armazenamento sequencial de elementos.
 
-    Pilhas (Stacks): Modelo LIFO (Last In, First Out).
+Pilhas (Stacks): Modelo LIFO (Last In, First Out).
 
-    Filas (Queues): Modelo FIFO (First In, First Out).
+Filas (Queues): Modelo FIFO (First In, First Out).
 
-    Árvores (Trees): Estruturas hierárquicas (ex: Árvores Binárias).
+Árvores (Trees): Estruturas hierárquicas (ex: Árvores Binárias).
 
-    Grafos: Conjunto de nós e conexões para problemas de redes e caminhos.
+Grafos: Conjunto de nós e conexões para problemas de redes e caminhos.
 
 💻 Linguagens de Programação
 
 As linguagens são as ferramentas que utilizamos para codificar algoritmos. Elas podem ser categorizadas por nível de abstração:
 Baixo Nível (Próximo ao Hardware)
 
-    C/C++: Oferecem controle total sobre a memória e alta performance, ideais para sistemas operacionais e drivers.
+C/C++: Oferecem controle total sobre a memória e alta performance, ideais para sistemas operacionais e drivers.
 
 Alto Nível (Abstração e Produtividade)
 
-    Python: Focada em legibilidade e rapidez de desenvolvimento. Muito usada em Ciência de Dados e Automação.
+Python: Focada em legibilidade e rapidez de desenvolvimento. Muito usada em Ciência de Dados e Automação.
 
-    Java: Fortemente tipada e baseada em POO (Programação Orientada a Objetos). Segue o lema: "Write once, run anywhere".
+Java: Fortemente tipada e baseada em POO (Programação Orientada a Objetos). Segue o lema: "Write once, run anywhere".
 
 ## 🧵 Manipulação de Strings
 
