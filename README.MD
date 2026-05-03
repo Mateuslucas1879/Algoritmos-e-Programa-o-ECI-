@@ -1,100 +1,100 @@
---
+---
 
-# 🚀 Algoritmos e Linguagens de Programação
+# 🚀 Algoritmos e Estruturas de Dados Completo
 
-Bem-vindo ao repositório central de estudos sobre **Lógica de Programação, Estruturas de Dados e Linguagens**. Este projeto serve como um guia teórico e prático para entender como as instruções são processadas e como as linguagens modernas traduzem o pensamento humano em soluções computacionais.
+Este repositório contém uma documentação técnica e exemplos práticos sobre os pilares da programação, desde a manipulação de dados básicos até estruturas multidimensionais e lógica funcional.
 
 ## 📌 Sumário
-* [O que é um Algoritmo?](#-o-que-é-um-algoritmo)
-* [Estruturas de Dados](#-estruturas-de-dados)
-* [Linguagens de Programação](#-linguagens-de-programação)
-* [Complexidade de Algoritmos (Big O)](#-complexidade-de-algoritmos-big-o)
-* [Como Contribuir](#-como-contribuir)
+* [Manipulação de Strings](#-manipulação-de-strings)
+* [Listas e Fatiamento (Slicing)](#-listas-e-fatiamento-slicing)
+* [Matrizes e Determinantes](#-matrizes-e-determinantes)
+* [Funções e Modularização](#-funções-e-modularização)
+* [Complexidade Big O](#-complexidade-big-o)
 
 ---
 
-## 🤖 O que é um Algoritmo?
+## 🧵 Manipulação de Strings
 
-Um algoritmo é uma sequência finita de passos bem definidos e não ambíguos que levam à solução de um problema. Em termos simples, é a **receita do bolo** do computador.
+Strings são sequências de caracteres. Para processar textos de forma eficiente, utilizamos métodos integrados que facilitam a limpeza e transformação dos dados.
 
-### Exemplo de Fluxo:
-1. **Entrada (Input):** Dados iniciais (ex: dois números).
-2. **Processamento:** Operações lógicas/matemáticas (ex: soma).
-3. **Saída (Output):** Resultado final (ex: o total).
-
----
-
-## 📦 Estruturas de Dados
-
-A forma como organizamos os dados influencia diretamente a performance do algoritmo. As principais estruturas exploradas neste repositório são:
-
-*   **Arrays/Listas:** Armazenamento sequencial de elementos.
-*   **Pilhas (Stacks):** Modelo LIFO (*Last In, First Out*).
-*   **Filas (Queues):** Modelo FIFO (*First In, First Out*).
-*   **Árvores (Trees):** Estruturas hierárquicas (ex: Árvores Binárias).
-*   **Grafos:** Conjunto de nós e conexões para problemas de redes e caminhos.
+### Principais Métodos:
+*   `.upper()` / `.lower()`: Converte todos os caracteres para maiúsculas ou minúsculas.
+*   `.strip()`: Remove espaços em branco (ou caracteres específicos) do início e do fim da string.
+*   `.split(delimitador)`: Divide a string em uma lista, usando um delimitador (ex: vírgula ou espaço).
+*   `.join(lista)`: Une elementos de uma lista em uma única string, utilizando um conector.
+*   `.replace(antigo, novo)`: Substitui todas as ocorrências de um trecho por outro.
+*   `.find()` / `.index()`: Retorna a posição de um caractere ou sub-string.
+*   `.capitalize()`: Torna a primeira letra da frase maiúscula.
 
 ---
 
-## 💻 Linguagens de Programação
+## ✂️ Listas e Fatiamento (Slicing)
 
-As linguagens são as ferramentas que utilizamos para codificar algoritmos. Elas podem ser categorizadas por nível de abstração:
+O fatiamento permite extrair partes específicas de sequências (strings ou listas) de forma concisa.
 
-### Baixo Nível (Próximo ao Hardware)
-*   **C/C++:** Oferecem controle total sobre a memória e alta performance, ideais para sistemas operacionais e drivers.
+**Sintaxe:** `sequencia[início:fim:passo]`
 
-### Alto Nível (Abstração e Produtividade)
-*   **Python:** Focada em legibilidade e rapidez de desenvolvimento. Muito usada em Ciência de Dados e Automação.
-*   **Java:** Fortemente tipada e baseada em POO (Programação Orientada a Objetos). Segue o lema: *"Write once, run anywhere"*.
+*   **Início:** Índice onde começa a fatia (inclusivo).
+*   **Fim:** Índice onde termina a fatia (exclusivo).
+*   **Passo:** O intervalo entre os elementos (ex: `2` para pegar um item sim, um item não).
+
+### Exemplos:
+```python
+lista = [0, 1, 2, 3, 4, 5]
+print(lista[1:4])   # Saída: [1, 2, 3]
+print(lista[::-1])  # Inverte a lista: [5, 4, 3, 2, 1, 0]
+```
+
+---
+
+## 📊 Matrizes e Determinantes
+
+Uma **matriz** é uma lista de listas, representando uma estrutura bidimensional (linhas e colunas).
+
+### Operações Comuns:
+*   **Acesso:** `matriz[linha][coluna]`
+*   **Percorrimento:** Geralmente feito com dois loops `for` aninhados.
+
+### Determinantes:
+Na computação, o cálculo de determinantes é essencial para resolver sistemas lineares e em computação gráfica.
+*   **Matriz 2x2:** `(a*d) - (b*c)`
+*   **Matriz 3x3:** Utiliza-se comumente a Regra de Sarrus ou o Teorema de Laplace para expansão de cofatores.
+
+---
+
+## ⚙️ Funções e Modularização
+
+Funções são blocos de código reutilizáveis que executam uma tarefa específica, ajudando a manter o código limpo (princípio DRY - *Don't Repeat Yourself*).
+
+*   **Parâmetros:** Valores de entrada que a função recebe.
+*   **Retorno:** O resultado que a função envia de volta após o processamento.
+*   **Escopo:** Variáveis definidas dentro de uma função não são acessíveis fora dela (escopo local).
+
+```python
+def calcular_area(base, altura):
+    """Calcula a área de um retângulo."""
+    return base * altura
+
+resultado = calcular_area(10, 5)
+```
 
 ---
 
 ## 📉 Complexidade de Algoritmos (Big O)
 
-Não basta o código funcionar; ele precisa ser eficiente. A **Notação Big O** é utilizada para medir o crescimento do tempo de execução ou do uso de memória à medida que a entrada de dados cresce.
+Mede a eficiência do código conforme o volume de dados aumenta.
 
-| Notação | Nome | Exemplo |
+| Notação | Nome | Descrição |
 | :--- | :--- | :--- |
-| **O(1)** | Constante | Acessar um índice de um array. |
-| **O(log n)** | Logarítmica | Busca Binária. |
-| **O(n)** | Linear | Percorrer uma lista simples. |
-| **O(n²)** | Quadrática | Loops aninhados (ex: Bubble Sort). |
+| **O(1)** | Constante | Execução imediata, independente do dado. |
+| **O(n)** | Linear | O tempo cresce proporcionalmente à entrada. |
+| **O(n²)** | Quadrática | Comum em matrizes percorridas integralmente. |
 
 ---
 
-## 🛠️ Como Executar os Exemplos
-
-Para rodar os códigos contidos neste repositório, você precisará dos respectivos compiladores/interpretadores instalados:
-
-```bash
-# Exemplo para rodar um script Python
-python3 script.py
-
-# Exemplo para compilar e rodar em C++
-g++ algoritmo.cpp -o executavel
-./executavel
-
-# Exemplo para rodar Java
-java Programa.java
-```
+## 🛠️ Tecnologias Utilizadas
+*   **Linguagens:** Python, Java, C++
+*   **Conceitos:** Lógica Matemática, Álgebra Linear, POO
 
 ---
-
-## 🤝 Contribuindo
-
-Contribuições são o que fazem a comunidade open source um lugar incrível para aprender e criar!
-
-1. Faça um **Fork** do projeto.
-2. Crie uma **Branch** para sua feature (`git checkout -b feature/NovaLogica`).
-3. Faça o **Commit** de suas alterações (`git commit -m 'Adicionando algoritmo de busca'`).
-4. Faça o **Push** para a Branch (`git push origin feature/NovaLogica`).
-5. Abra um **Pull Request**.
-
----
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
-
----
-*Desenvolvido com ☕ e dedicação por Mateus Lucas
+*Documentação em constante atualização para fins de estudo e consulta.*
