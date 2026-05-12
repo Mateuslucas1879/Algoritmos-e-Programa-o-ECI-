@@ -131,11 +131,3 @@ Mede como o tempo de execução cresce conforme o volume de dados ($n$) aumenta.
 ---
 
 *Repositório focado em Engenharia de Sistemas e Ciência da Computação.*
-
-```
-
----
-
-
-
-```
