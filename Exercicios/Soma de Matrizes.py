@@ -1,28 +1,29 @@
 def soma_matriz(matriz_01,matriz_02):
-    if not isinstance(matriz_01[0],list) or not isinstance(matriz_02[0],list):
-        return "ERRO!"
+    if len (matriz_01) ==0 or len(matriz_02) == 0:
+        return "Erro"
+
     if len(matriz_01) != len(matriz_02):
-        return "ERRO!"
+        return "Erro"
 
-    if len(matriz_01[0]) != len(matriz_02[0]):
-        return "ERRO!"
+    for i in range(len(matriz_01)):
+        if len(matriz_01[i]) != len(matriz_02[i]):
+            return "Erro"
 
-    quantidade_linhas = len(matriz_01)
-    quantidade_colunas = len(matriz_01[0])
+    quantidade_linha = len(matriz_01)
+    quantidade_coluna = len(matriz_01[0])
 
-    resultado = [[0 for coluna in range(quantidade_colunas)] for linha in range(quantidade_linhas)]
+    resultado = [[0 for x in range(quantidade_coluna)] for y in range(quantidade_linha)]
 
-    for i in range(quantidade_linhas):
-        for j in range(quantidade_colunas):
+    for i in range(quantidade_linha):
+        for j in range(quantidade_coluna):
             resultado[i][j] = matriz_01[i][j] + matriz_02[i][j]
-
     return resultado
 
 
 l1 =int(input("Numero de Linhas matriz 01: "))
 c1= int(input("Numero de colunas matriz 01: "))
-
 m1 = []
+
 for i in range(l1):
     linha = []
     for j in range(c1):
@@ -30,10 +31,11 @@ for i in range(l1):
         linha.append(num)
     m1.append(linha)
 
-l2 = int(input("Numero de linhas matriz 02: "))
+l2 = int(input("Numero de Linhas matriz 02: "))
 c2 = int(input("Numero de colunas matriz 02: "))
 
 m2 = []
+
 for i in range(l2):
     num_linha = []
     for j in range(c2):
@@ -41,5 +43,4 @@ for i in range(l2):
         num_linha.append(val)
     m2.append(num_linha)
 
-
-print(soma_matriz(m1, m2))
+print(soma_matriz(m1,m2))
