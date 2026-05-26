@@ -20,3 +20,4 @@ def multiplicaçao_matriz(matriz_a, matriz_b):
 
 m1 = eval(input())
 m2 = eval(input())
+print(multiplicaçao_matriz(m1, m2))
