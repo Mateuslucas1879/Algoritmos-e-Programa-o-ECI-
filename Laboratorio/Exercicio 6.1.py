@@ -24,7 +24,7 @@ class Vetor(list):
                     if lista[j] > lista[j + 1]:
                         lista[j], lista[j + 1] = lista[j + 1], lista[j]
 
-                return lista
+            return lista
 
 
 
